@@ -1,6 +1,8 @@
 .Pokedex-cards{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .Pokecard {
@@ -11,4 +13,13 @@
 	text-align: center;
 	background-color: white;
 	border-radius: 3px;
+}
+
+.Pokedex {
+	text-align: center;
+}
+
+
+.Pokecard-data {
+	font-size: 80%;
 }
