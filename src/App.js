@@ -5,7 +5,7 @@ import Pokegame from './Pokegame';
 function App() {
   return (
     <div className="App">
-      <Pokegame />
+      <Pokegame className="Pokegame" />
     </div>
   );
 }
