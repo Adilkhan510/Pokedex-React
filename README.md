@@ -1,4 +1,4 @@
-<img imgsrc= "./public/images/Pokedex.png"></img>
+<img src= "./public/images/Pokedex.png"></img>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
