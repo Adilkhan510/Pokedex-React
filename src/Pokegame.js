@@ -24,10 +24,12 @@ class Pokegame extends Component {
             let randIdx = Math.floor(Math.random() * hand2.length);
             hand1.push(hand2.splice(randIdx,1)[0])
         }
+        let exp1 = hand1.reduce((exp, Pokemon)=>exp + Pokemon.base_experience,0)
+        let exp2 = hand2.reduce((exp, Pokemon)=>exp + Pokemon.base_experience,0)
         return(
             <div className="Pokegame">
-                <Pokedex Pokemon = {hand1} />
-                <Pokedex Pokemon = {hand2} />
+                <Pokedex Pokemon = {hand1} exp = {exp1} isWinner ={exp1 > exp2} />
+                <Pokedex Pokemon = {hand2} exp={exp2} isWinner= {exp2 > exp1} />
             </div>
 
         )
